@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+.container {
+    background: var(--background);
+    position: relative;
+    height: 100vh;
+}
+
+.img-logo {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.form-background {
+    background: var(--form-background);
+    width: 572px;
+    height: 512px;
+    margin-top: 150px;
+    margin-left: 74px;
+}
+
+
+
+
+#email {
+    background-image: url(assets/mail.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px 15px;
+    padding: 5px 20px;
+    border-radius: 4px;
+}
+
+#email:focus-within {
+    background-image: url(assets/mail-focus.svg);
+    border: 2px solid #ffc632
+}
+
+.img-slide {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
