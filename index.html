@@ -12,33 +12,41 @@
 </head>
 <body>
     <div class="container">
-        <img class="img-logo" src="assets/logo.svg" alt="logo">
-
+        <img class="img-side" src="./assets/side-image.jpg" alt="side-image">
+        <img class="img-logo" src="./assets/logo.svg" alt="img-logo">
         <div class="form-background">
-            <header class="header">
-                <div class="text-login">
-                    <img src="./assets/log-in.svg" alt="">
-                    <h2>Faça seu login</h2>
+            <div class="form">
+                <div class="header">
+                    <h2>
+                        <img class="icon-login" src="./assets/log-in.svg" alt="icon-login">
+                        Faça seu login
+                    </h2>
+                    <p class="text-information">Entre com suas informações de cadastro</p>
                 </div>
-                <p class="text-header">Entre com suas informações de cadastro.</p>
-            </header>
+                <form action="">
+                    <div class="container-inputs">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+                    </div>
+                    
+                    <div class="container-inputs">
+                        <label for="password">Senha</label>
+                        <input type="password" name="password" id="password" placeholder="Digite sua senha">    
+                    </div>
+                    
+                    <p>
+                        <input name="remember" id="remember">Lembre-me
+                        <a class="redefine-password" href="#">Esqueci minha senha</a> 
+                    </p>
 
-            <form action="#">
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+                    <button id="submit" type="submit">ENTRAR</button>
 
-                <label for="password">Senha</label>
-                <input type="password" name="password" id="password" placeholder="Digite sua senha">
-
-                <input type="checkbox" name="remember-me" id="remember-me"> <span>Lembre-me</span>
-
-                <button class="submit" type="submit">Entrar</button>
-                <a class="createAnAccount" href="#">Não tem uma conta? <strong>Registre-se</strong></a>
-            </form>
-
+                    <p class="register">
+                        Não tem uma conta? <a href="#"><strong>Registre-se</strong></a>
+                    </p>
+                </form>
+            </div>
         </div>
-
-        <img class="img-slide" src="./assets/side-image.jpg" alt="img-slide">
     </div>
 </body>
 </html>
